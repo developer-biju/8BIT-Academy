@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xuta AI Academy | Board Excellence in CS & AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .bg-deep-blue {
+            background-color: #0f172a;
+        }
+
+        .text-teal-soft {
+            color: #2dd4bf;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 font-sans text-slate-900">
+
+    <nav
+        class="sticky top-0 z-50 bg-[#0B1120]/90 backdrop-blur-md text-white py-4 px-6 border-b border-slate-800/50 shadow-xl">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+
+            <a href="ai-tutorial.html" class="flex items-center space-x-4 group cursor-pointer">
+                <div class="flex flex-col items-end leading-none">
+                    <span
+                        class="text-2xl font-black text-white uppercase tracking-tighter group-hover:text-teal-400 transition-colors">8bit</span>
+                    <span class="text-[10px] font-bold text-teal-400 tracking-[0.4em] uppercase">Academy</span>
+                </div>
+                <div class="h-10 w-[2px] bg-slate-700 rounded-full"></div>
+                <div class="text-2xl font-medium text-slate-400 tracking-[0.1em] uppercase">
+                    Class
+                </div>
+            </a>
+
+            <div class="hidden md:flex space-x-8 font-medium items-center text-slate-300">
+                <a href="ai-tutorial.html#strategy" class="hover:text-teal-400 transition-colors">Strategy</a>
+                <a href="ai-tutorial.html#courses" class="hover:text-teal-400 transition-colors">Courses</a>
+                <a href="ai-tutorial.html#faculty" class="hover:text-teal-400 transition-colors">Faculty</a>
+                <a href="fees.html" class="hover:text-teal-400 transition-colors">Fee</a>
+                <a href="ai-tutorial.html#admission"
+                    class="bg-teal-500 text-[#0B1120] px-6 py-2 rounded-full font-bold hover:bg-white hover:scale-105 transition-all duration-300 shadow-[0_0_15px_rgba(45,212,191,0.3)]">
+                    Enroll Now
+                </a>
+            </div>
+
+            <button id="menu-btn"
+                class="md:hidden text-2xl text-teal-400 focus:outline-none hover:scale-110 transition-transform">
+                <i class="fas fa-bars" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-[#0B1120] absolute top-full left-0 w-full border-t border-slate-800 flex flex-col p-6 space-y-4 shadow-2xl">
+            <a href="ai-tutorial.html#strategy"
+                class="mobile-link text-lg text-slate-300 border-b border-slate-800 pb-2 hover:text-teal-400">Strategy</a>
+            <a href="ai-tutorial.html#courses"
+                class="mobile-link text-lg text-slate-300 border-b border-slate-800 pb-2 hover:text-teal-400">Courses</a>
+            <a href="ai-tutorial.html#faculty"
+                class="mobile-link text-lg text-slate-300 border-b border-slate-800 pb-2 hover:text-teal-400">Faculty</a>
+            <a href="fees.html"
+                class="mobile-link text-lg text-slate-300 border-b border-slate-800 pb-2 hover:text-teal-400">Fee</a>
+            <a href="ai-tutorial.html#admission"
+                class="mobile-link bg-teal-500 text-[#0B1120] text-center py-4 rounded-xl font-bold active:scale-95 transition-transform">Enroll
+                Now</a>
+        </div>
+    </nav>
+
+    <header class="relative bg-[#0B1120] text-white overflow-hidden pt-16 pb-24 px-6">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-[120px] -z-10 animate-pulse">
+        </div>
+        <div class="absolute bottom-0 right-1/4 w-64 h-64 bg-blue-600/10 rounded-full blur-[100px] -z-10"></div>
+
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+
+                <div class="lg:w-1/2 z-10 text-center lg:text-left">
+                    <div
+                        class="inline-flex items-center space-x-2 bg-slate-800/50 border border-slate-700 px-3 py-1.5 rounded-full mb-8 hover:border-teal-500/50 transition cursor-default group">
+                        <span class="flex h-2 w-2 rounded-full bg-teal-500 animate-ping"></span>
+                        <span
+                            class="text-xs font-bold tracking-widest uppercase text-slate-300 group-hover:text-teal-400">Live
+                            Classes: Batch 2026 Admissions Open Enroll Now!</span>
+                    </div>
+
+                    <h1 class="text-5xl md:text-7xl font-black leading-tight mb-6 tracking-tight">
+                        Master the Future: <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400">
+                            AI & Computer Science
+                        </span>
+                    </h1>
+
+                    <p class="text-xl text-slate-400 mb-10 max-w-xl leading-relaxed mx-auto lg:mx-0">
+                        High-impact interactive sessions for <span class="text-white font-medium">SEBA & CBSE</span>
+                        (Class IX–XII). We bridge the gap between school boards and the global tech industry.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#admission"
+                            class="w-full sm:w-auto bg-teal-500 text-[#0B1120] px-10 py-5 rounded-2xl font-black text-lg hover:bg-white hover:shadow-[0_0_30px_rgba(45,212,191,0.5)] transition-all duration-300 transform hover:-translate-y-1">
+                            Enroll Now
+                        </a>
+                        <a href="#courses"
+                            class="w-full sm:w-auto bg-slate-900/50 border border-slate-700 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-slate-800 transition-all">
+                            Explore Courses
+                        </a>
+                    </div>
+
+                    <div class="mt-12 flex flex-wrap justify-center lg:justify-start gap-8 opacity-70">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-star text-teal-400 text-sm"></i>
+                            <span class="text-sm font-bold uppercase tracking-tighter">95+ Board Average</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-user-friends text-teal-400 text-sm"></i>
+                            <span class="text-sm font-bold uppercase tracking-tighter">Small Batch Size</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 relative group">
+                    <style>
+                        @keyframes float {
+
+                            0%,
+                            100% {
+                                transform: translateY(0px);
+                            }
+
+                            50% {
+                                transform: translateY(-20px);
+                            }
+                        }
+
+                        .animate-float {
+                            animation: float 6s ease-in-out infinite;
+                        }
+                    </style>
+
+                    <div class="relative z-10 animate-float">
+                        <div
+                            class="absolute -inset-1 bg-gradient-to-r from-teal-500 to-blue-600 rounded-[2.5rem] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200">
+                        </div>
+                        <div class="relative bg-slate-900 rounded-[2.5rem] overflow-hidden border-2 border-slate-800">
+                            <img src="ccc.png"
+                                alt="Tech Learning"
+                                class="w-full h-auto object-cover opacity-80 group-hover:opacity-100 transition duration-500">
+                        </div>
+
+                        <div
+                            class="absolute -bottom-6 -left-6 bg-[#0B1120] border border-slate-800 p-4 rounded-2xl shadow-2xl hidden md:block">
+                            <div class="flex items-center space-x-3">
+                                <div class="bg-teal-500/20 p-2 rounded-lg">
+                                    <i class="fas fa-brain text-teal-500"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-500 font-bold uppercase">Learning Mode</p>
+                                    <p class="text-sm font-black">AI & Python Live</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <section id="model" class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-16">Our Specialized Learning Model</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="p-8 rounded-xl bg-slate-50 hover:shadow-xl transition">
+                    <i class="fas fa-users text-4xl text-teal-500 mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Limited Batches</h3>
+                    <p class="text-slate-600">Max 15 students per class to ensure no one is left behind.</p>
+                </div>
+                <div class="p-8 rounded-xl bg-slate-50 hover:shadow-xl transition">
+                    <i class="fas fa-video text-4xl text-teal-500 mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Live Interactive</h3>
+                    <p class="text-slate-600">Real-time doubt clearing and live coding sessions.</p>
+                </div>
+                <div class="p-8 rounded-xl bg-slate-50 hover:shadow-xl transition">
+                    <i class="fas fa-book-open text-4xl text-teal-500 mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Board Specific</h3>
+                    <p class="text-slate-600">Curriculum strictly following SEBA and CBSE guidelines.</p>
+                </div>
+                <div class="p-8 rounded-xl bg-slate-50 hover:shadow-xl transition">
+                    <i class="fas fa-code text-4xl text-teal-500 mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Hands-on Lab</h3>
+                    <p class="text-slate-600">Weekly projects in Python, Java, and AI Modeling tools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="py-20 px-6 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Academic Programs</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">
+                    Comprehensive curriculum designed for Board Exams and future-ready tech skills. Select your class to
+                    view the roadmap.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <div
+                    class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 border border-slate-200">
+                    <div class="h-48 bg-teal-500 relative flex flex-col items-center justify-center text-white p-6">
+                        <div class="absolute top-4 right-4 bg-white/20 px-3 py-1 rounded-full text-xs font-bold">New
+                            Batch</div>
+                        <span class="text-6xl font-black opacity-20 absolute left-4 bottom-0 leading-none">09</span>
+                        <i class="fas fa-terminal text-4xl mb-2"></i>
+                        <h3 class="text-2xl font-bold">Class IX</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-blue-100 text-blue-700 text-[10px] font-bold px-2 py-1 rounded uppercase">SEBA</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-700 text-[10px] font-bold px-2 py-1 rounded uppercase">CBSE</span>
+                        </div>
+                        <h4 class="font-bold text-lg text-slate-900 mb-2">Foundations of CS</h4>
+                        <p class="text-slate-500 text-sm mb-4">Introduction to Logic, Computer Basics, and Scratch
+                            Programming.</p>
+                        <div class="flex items-center text-xs text-slate-400 font-medium mb-6">
+                            <i class="fas fa-clock mr-2"></i> 6 Months | <i class="fas fa-video ml-2 mr-1"></i> Live
+                        </div>
+                        <a href="#admission"
+                            class="block text-center bg-slate-900 text-white py-3 rounded-xl font-bold group-hover:bg-teal-500 transition-colors">Learn
+                            More</a>
+                    </div>
+                </div>
+
+                <div
+                    class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 border border-slate-200">
+                    <div
+                        class="h-48 bg-deep-blue bg-[#0f172a] relative flex flex-col items-center justify-center text-white p-6">
+                        <span
+                            class="text-6xl font-black opacity-20 absolute left-4 bottom-0 leading-none text-teal-500">10</span>
+                        <i class="fas fa-microchip text-4xl mb-2 text-teal-400"></i>
+                        <h3 class="text-2xl font-bold">Class X</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-blue-100 text-blue-700 text-[10px] font-bold px-2 py-1 rounded uppercase">SEBA</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-700 text-[10px] font-bold px-2 py-1 rounded uppercase">CBSE</span>
+                        </div>
+                        <h4 class="font-bold text-lg text-slate-900 mb-2">AI & Data Science</h4>
+                        <p class="text-slate-500 text-sm mb-4">Python Basics, HTML/CSS, and Introduction to Artificial
+                            Intelligence.</p>
+                        <div class="flex items-center text-xs text-slate-400 font-medium mb-6">
+                            <i class="fas fa-clock mr-2"></i> 8 Months | <i class="fas fa-video ml-2 mr-1"></i> Live
+                        </div>
+                        <a href="#admission"
+                            class="block text-center bg-slate-900 text-white py-3 rounded-xl font-bold group-hover:bg-teal-500 transition-colors">Learn
+                            More</a>
+                    </div>
+                </div>
+
+                <div
+                    class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 border border-slate-200">
+                    <div class="h-48 bg-teal-600 relative flex flex-col items-center justify-center text-white p-6">
+                        <span class="text-6xl font-black opacity-20 absolute left-4 bottom-0 leading-none">11</span>
+                        <i class="fas fa-code-branch text-4xl mb-2"></i>
+                        <h3 class="text-2xl font-bold">Class XI</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-blue-100 text-blue-700 text-[10px] font-bold px-2 py-1 rounded uppercase">SEBA</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-700 text-[10px] font-bold px-2 py-1 rounded uppercase">CBSE</span>
+                        </div>
+                        <h4 class="font-bold text-lg text-slate-900 mb-2">Advanced Python & DS</h4>
+                        <p class="text-slate-500 text-sm mb-4">Data Structures, Algorithms, and Advanced Python Modules.
+                        </p>
+                        <div class="flex items-center text-xs text-slate-400 font-medium mb-6">
+                            <i class="fas fa-clock mr-2"></i> 1 Year | <i class="fas fa-video ml-2 mr-1"></i> Live
+                        </div>
+                        <a href="#admission"
+                            class="block text-center bg-slate-900 text-white py-3 rounded-xl font-bold group-hover:bg-teal-500 transition-colors">Learn
+                            More</a>
+                    </div>
+                </div>
+
+                <div
+                    class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 border border-slate-200">
+                    <div class="h-48 bg-slate-900 relative flex flex-col items-center justify-center text-white p-6">
+                        <div class="absolute top-4 right-4 bg-teal-500 px-3 py-1 rounded-full text-[10px] font-bold">
+                            Board Focus</div>
+                        <span
+                            class="text-6xl font-black opacity-20 absolute left-4 bottom-0 leading-none text-white">12</span>
+                        <i class="fas fa-brain text-4xl mb-2 text-teal-400"></i>
+                        <h3 class="text-2xl font-bold">Class XII</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-blue-100 text-blue-700 text-[10px] font-bold px-2 py-1 rounded uppercase">SEBA</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-700 text-[10px] font-bold px-2 py-1 rounded uppercase">CBSE</span>
+                        </div>
+                        <h4 class="font-bold text-lg text-slate-900 mb-2">Full Stack & AI</h4>
+                        <p class="text-slate-500 text-sm mb-4">MySQL, Networking, Machine Learning, and Board Exam Prep.
+                        </p>
+                        <div class="flex items-center text-xs text-slate-400 font-medium mb-6">
+                            <i class="fas fa-clock mr-2"></i> 1 Year | <i class="fas fa-video ml-2 mr-1"></i> Live
+                        </div>
+                        <a href="#admission"
+                            class="block text-center bg-slate-900 text-white py-3 rounded-xl font-bold group-hover:bg-teal-500 transition-colors">Learn
+                            More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="faculty" class="py-20 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+
+                <div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
+                    <img src="passport.png" alt="Biju Barman"
+                        class="w-full h-full rounded-2xl object-cover shadow-xl border-4 border-slate-50">
+                </div>
+
+                <div class="flex-1 text-center md:text-left">
+                    <h2 class="text-3xl font-black text-slate-900 mb-2">Biju Barman</h2>
+                    <p class="text-teal-600 font-bold uppercase tracking-widest text-sm mb-6">Lead Instructor</p>
+
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center justify-center md:justify-start text-slate-700">
+                            <i class="fas fa-graduation-cap text-teal-500 mr-3 w-5"></i>
+                            <span>Master of Computer Applications (MCA)</span>
+                        </div>
+                        <div class="flex items-center justify-center md:justify-start text-slate-700">
+                            <i class="fas fa-university text-teal-500 mr-3 w-5"></i>
+                            <span>Tezpur University</span>
+                        </div>
+                        <div class="flex items-center justify-center md:justify-start text-slate-700">
+                            <i class="fas fa-certificate text-teal-500 mr-3 w-5"></i>
+                            <span>Expert in SEBA & CBSE Curriculum</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="relative p-8 bg-gradient-to-br from-slate-50 to-white rounded-3xl border border-slate-100 shadow-xl shadow-teal-500/5 group hover:shadow-teal-500/10 transition-all duration-500">
+                        <div
+                            class="absolute -top-4 -left-2 w-10 h-10 bg-teal-500 rounded-full flex items-center justify-center shadow-lg shadow-teal-500/30">
+                            <i class="fas fa-quote-left text-white text-sm"></i>
+                        </div>
+
+                        <p class="text-slate-700 leading-relaxed italic text-lg relative z-10">
+                            "Technology is evolving faster than ever, and I am here to ensure you don't just keep up,
+                            but lead the way. My goal is to simplify complex concepts and provide you with the best
+                            industry-grade knowledge. Study with me, and together we will turn your curiosity into
+                            expertise and your hard work into top-tier results."
+                        </p>
+
+                        <div
+                            class="mt-4 w-12 h-1 bg-teal-500 rounded-full group-hover:w-24 transition-all duration-500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="feedback" class="py-20 px-6 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div class="max-w-2xl">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Student Success Stories</h2>
+                    <p class="text-slate-600 italic">Hear from the students who have mastered AI and Computer Science
+                        with our interactive live sessions.</p>
+                </div>
+                <div class="hidden md:block">
+                    <div
+                        class="flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-sm border border-slate-100">
+                        <span class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span class="text-sm font-bold text-slate-700">4.9/5 Rating</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div
+                    class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="flex text-yellow-400 text-xs mb-4">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 leading-relaxed mb-6">
+                            "The live classes for Class XII CS were a lifesaver. Biju Sir explains complex Python
+                            concepts using real-world examples. I scored 95 in my board exams!"
+                        </p>
+                    </div>
+                    <div class="flex items-center border-t pt-6">
+                        <img src="https://ui-avatars.com/api/?name=Rahul+Deka&background=random"
+                            class="w-12 h-12 rounded-full mr-4" alt="Student">
+                        <div>
+                            <h4 class="font-bold text-slate-900">Rahul Deka</h4>
+                            <p class="text-xs text-teal-600 font-bold uppercase tracking-wider">Class XII • SEBA Board
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="flex text-yellow-400 text-xs mb-4">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 leading-relaxed mb-6">
+                            "I love the interactive mode! It's not like YouTube; here I can stop the teacher and ask
+                            doubts immediately. The AI modeling projects were my favorite."
+                        </p>
+                    </div>
+                    <div class="flex items-center border-t pt-6">
+                        <img src="https://ui-avatars.com/api/?name=Priya+Sharma&background=random"
+                            class="w-12 h-12 rounded-full mr-4" alt="Student">
+                        <div>
+                            <h4 class="font-bold text-slate-900">Priya Sharma</h4>
+                            <p class="text-xs text-teal-600 font-bold uppercase tracking-wider">Class X • CBSE Board</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="flex text-yellow-400 text-xs mb-4">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 leading-relaxed mb-6">
+                            "The limited batch size really helps. Sir focuses on every student. My programming logic has
+                            improved so much since I joined Xuta AI."
+                        </p>
+                    </div>
+                    <div class="flex items-center border-t pt-6">
+                        <img src="https://ui-avatars.com/api/?name=Arjun+Das&background=random"
+                            class="w-12 h-12 rounded-full mr-4" alt="Student">
+                        <div>
+                            <h4 class="font-bold text-slate-900">Arjun Das</h4>
+                            <p class="text-xs text-teal-600 font-bold uppercase tracking-wider">Class XI • SEBA Board
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 bg-deep-blue rounded-3xl p-8 text-center text-white relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 opacity-10">
+                    <i class="fas fa-quote-right text-9xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Join 100+ students from across Assam.</h3>
+                <p class="text-teal-400 font-medium italic">"Quality Education is not an act, it is a habit."</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="strategy" class="py-20 px-6 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+                <div class="space-y-8">
+                    <span
+                        class="bg-teal-100 text-teal-700 px-4 py-2 rounded-full text-sm font-bold tracking-widest uppercase">
+                        My Teaching Philosophy
+                    </span>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
+                        Stop Memorizing.<br>
+                        <span class="text-teal-500">Start Building.</span>
+                    </h2>
+                    <p class="text-lg text-slate-600 leading-relaxed">
+                        Most students struggle with Computer Science because it's taught like history. In my classes, we
+                        treat code as a superpower. I combine <b>Academic Board Excellence</b> with <b>Practical Industry
+                        Skills</b> so you don't just get a marksheet—you get a career.
+                    </p>
+
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="bg-teal-500 text-white p-1 rounded-full mr-4 mt-1 shadow-lg shadow-teal-500/30">
+                                <i class="fas fa-check text-xs"></i>
+                            </div>
+                            <p class="text-slate-700 font-medium"><strong>Targeted Board Strategy:</strong> Detailed
+                                focus on SEBA/CBSE previous year patterns to ensure 95+ scores.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-teal-500 text-white p-1 rounded-full mr-4 mt-1 shadow-lg shadow-teal-500/30">
+                                <i class="fas fa-check text-xs"></i>
+                            </div>
+                            <p class="text-slate-700 font-medium"><strong>MERN & AI Exposure:</strong> Beyond the
+                                syllabus, I teach you how real-world apps like Instagram or ChatGPT work.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-teal-500 text-white p-1 rounded-full mr-4 mt-1 shadow-lg shadow-teal-500/30">
+                                <i class="fas fa-check text-xs"></i>
+                            </div>
+                            <p class="text-slate-700 font-medium"><strong>Interactive TLM:</strong> I use custom-built
+                                interactive tools (Teaching Learning Materials) to make abstract logic visible.</p>
+                        </li>
+                    </ul>
+
+                    <div class="pt-4">
+                        <a href="#admission"
+                            class="inline-block bg-[#0f172a] text-white px-10 py-4 rounded-2xl font-bold hover:bg-slate-800 transition-all hover:scale-105 shadow-xl">
+                            Secure Your Seat Now →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 shadow-inner">
+                    <h3 class="text-2xl font-bold mb-10 text-center text-slate-900">The "8BIT Academy" Learning Loop
+                    </h3>
+
+                    <div class="space-y-12 relative">
+                        <div class="absolute left-4 top-2 bottom-2 w-0.5 bg-teal-200 md:left-6"></div>
+
+                        <div class="relative flex items-start ml-10 md:ml-16 group">
+                            <div
+                                class="absolute -left-10 md:-left-16 w-8 h-8 md:w-12 md:h-12 bg-white border-4 border-teal-500 rounded-full flex items-center justify-center z-10 group-hover:bg-teal-500 group-hover:text-white transition-all duration-300">
+                                <span class="font-bold">1</span>
+                            </div>
+                            <div>
+                                <h4
+                                    class="font-bold text-lg text-slate-900 group-hover:text-teal-600 transition-colors">
+                                    Concept Deep-Dive</h4>
+                                <p class="text-slate-600 text-sm">We break down complex topics (like Python loops or AI
+                                    logic) using simple real-world analogies that you’ll never forget.</p>
+                            </div>
+                        </div>
+
+                        <div class="relative flex items-start ml-10 md:ml-16 group">
+                            <div
+                                class="absolute -left-10 md:-left-16 w-8 h-8 md:w-12 md:h-12 bg-white border-4 border-teal-500 rounded-full flex items-center justify-center z-10 group-hover:bg-teal-500 group-hover:text-white transition-all duration-300">
+                                <span class="font-bold">2</span>
+                            </div>
+                            <div>
+                                <h4
+                                    class="font-bold text-lg text-slate-900 group-hover:text-teal-600 transition-colors">
+                                    The "Live Lab" Practice</h4>
+                                <p class="text-slate-600 text-sm">Every theory is followed by a live coding session
+                                    where you and I build the program together in real-time.</p>
+                            </div>
+                        </div>
+
+                        <div class="relative flex items-start ml-10 md:ml-16 group">
+                            <div
+                                class="absolute -left-10 md:-left-16 w-8 h-8 md:w-12 md:h-12 bg-white border-4 border-teal-500 rounded-full flex items-center justify-center z-10 group-hover:bg-teal-500 group-hover:text-white transition-all duration-300">
+                                <span class="font-bold">3</span>
+                            </div>
+                            <div>
+                                <h4
+                                    class="font-bold text-lg text-slate-900 group-hover:text-teal-600 transition-colors">
+                                    Board-Specific Mastery</h4>
+                                <p class="text-slate-600 text-sm">We solve weekly mock tests based on SEBA/CBSE marking
+                                    schemes, training you to write perfect answers for every question type.</p>
+                            </div>
+                        </div>
+
+                        <div class="relative flex items-start ml-10 md:ml-16 group">
+                            <div
+                                class="absolute -left-10 md:-left-16 w-8 h-8 md:w-12 md:h-12 bg-white border-4 border-teal-500 rounded-full flex items-center justify-center z-10 group-hover:bg-teal-500 group-hover:text-white transition-all duration-300">
+                                <span class="font-bold">4</span>
+                            </div>
+                            <div>
+                                <h4
+                                    class="font-bold text-lg text-slate-900 group-hover:text-teal-600 transition-colors">
+                                    Portfolio & Projects</h4>
+                                <p class="text-slate-600 text-sm">You finish the course not just with a grade, but with
+                                    a mini-portfolio of AI projects that show your true potential.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="admission" class="py-20 px-6 bg-[#0B1120] text-white">
+        <div class="max-w-4xl mx-auto bg-white text-slate-900 rounded-[2.5rem] p-8 md:p-12 shadow-2xl">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-black uppercase italic tracking-tight text-[#0B1120]">Start Your Journey</h2>
+                <p class="text-slate-500 mt-2">Fill the form to book a free demo session at 8bit Class.</p>
+            </div>
+
+            <form action="https://formspree.io/f/xgonznkr" method="POST" class="space-y-6">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-slate-400 mb-2 ml-1">Student Name</label>
+                        <input type="text" name="Student_Name" required placeholder="Full Name"
+                            class="w-full px-5 py-4 rounded-2xl border border-slate-200 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition-all bg-slate-50">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-slate-400 mb-2 ml-1">WhatsApp
+                            Number</label>
+                        <input type="tel" name="WhatsApp_Number" required placeholder="+91 00000 00000"
+                            class="w-full px-5 py-4 rounded-2xl border border-slate-200 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition-all bg-slate-50">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-slate-400 mb-2 ml-1">Select Class</label>
+                        <select name="Selected_Class" required
+                            class="w-full px-5 py-4 rounded-2xl border border-slate-200 focus:ring-2 focus:ring-teal-500 outline-none bg-slate-50">
+                            <option value="Class IX">Class IX</option>
+                            <option value="Class X">Class X</option>
+                            <option value="Class XI">Class XI</option>
+                            <option value="Class XII">Class XII</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-slate-400 mb-2 ml-1">Education
+                            Board</label>
+                        <select name="Education_Board" required
+                            class="w-full px-5 py-4 rounded-2xl border border-slate-200 focus:ring-2 focus:ring-teal-500 outline-none bg-slate-50">
+                            <option value="SEBA">SEBA (Assam)</option>
+                            <option value="CBSE">CBSE</option>
+                        </select>
+                    </div>
+                </div>
+
+                <input type="text" name="_gotcha" style="display:none">
+
+                <button type="submit"
+                    class="w-full bg-teal-500 text-[#0B1120] font-black py-5 rounded-2xl shadow-xl shadow-teal-500/20 hover:bg-[#0B1120] hover:text-white transition-all duration-300 transform hover:scale-[1.01] active:scale-95 uppercase tracking-widest">
+                    Submit Admission Form
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-white py-12 px-6 border-t border-slate-200 text-center">
+        <p class="text-slate-400 font-bold uppercase tracking-widest text-xs mb-6">Tools We Master</p>
+        <div class="flex flex-wrap justify-center gap-8 text-3xl text-slate-300">
+            <i class="fab fa-python hover:text-blue-500 transition"></i>
+            <!-- <i class="fab fa-java hover:text-red-500 transition"></i>
+            <i class="fas fa-robot hover:text-teal-500 transition"></i>
+            <i class="fab fa-react hover:text-blue-400 transition"></i>
+            <i class="fab fa-node hover:text-green-500 transition"></i> -->
+        </div>
+        <div class="mt-12 text-slate-500 text-sm">
+            &copy; 2026 8Bit Academy. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Use DOMContentLoaded to ensure the HTML is loaded before the script runs
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // 1. Mobile Menu Logic
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', () => {
+                    const isHidden = mobileMenu.classList.contains('hidden');
+                    if (isHidden) {
+                        mobileMenu.classList.remove('hidden');
+                        menuIcon?.classList.replace('fa-bars', 'fa-times');
+                    } else {
+                        mobileMenu.classList.add('hidden');
+                        menuIcon?.classList.replace('fa-times', 'fa-bars');
+                    }
+                });
+
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        menuIcon?.classList.replace('fa-times', 'fa-bars');
+                    });
+                });
+            }
+
+            // 2. Back to Top Logic
+            const backToTopBtn = document.getElementById('backToTop');
+
+            if (backToTopBtn) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 400) {
+                        backToTopBtn.classList.remove('opacity-0', 'translate-y-10', 'pointer-events-none');
+                        backToTopBtn.classList.add('opacity-100', 'translate-y-0');
+                    } else {
+                        backToTopBtn.classList.add('opacity-0', 'translate-y-10', 'pointer-events-none');
+                        backToTopBtn.classList.remove('opacity-100', 'translate-y-0');
+                    }
+                });
+
+                backToTopBtn.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+        });
+    </script>
+
+    <button id="backToTop"
+        class="fixed bottom-8 right-8 z-50 bg-teal-500 text-white w-12 h-12 rounded-full shadow-2xl flex items-center justify-center opacity-0 translate-y-10 pointer-events-none transition-all duration-500 hover:bg-teal-600 hover:-translate-y-1 focus:outline-none">
+        <i class="fas fa-arrow-up text-lg"></i>
+    </button>
+
+</body>
+
+</html>

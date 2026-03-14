@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xuta AI Academy | Board Excellence in CS & AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .bg-deep-blue {
+            background-color: #0f172a;
+        }
+
+        .text-teal-soft {
+            color: #2dd4bf;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 font-sans text-slate-900">
+
+    <nav
+        class="sticky top-0 z-50 bg-[#0B1120]/90 backdrop-blur-md text-white py-4 px-6 border-b border-slate-800/50 shadow-xl">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+
+            <a href="ai-tutorial.html" class="flex items-center space-x-4 group cursor-pointer">
+                <div class="flex flex-col items-end leading-none">
+                    <span
+                        class="text-2xl font-black text-white uppercase tracking-tighter group-hover:text-teal-400 transition-colors">8bit</span>
+                    <span class="text-[10px] font-bold text-teal-400 tracking-[0.4em] uppercase">Academy</span>
+                </div>
+                <div class="h-10 w-[2px] bg-slate-700 rounded-full"></div>
+                <div class="text-2xl font-medium text-slate-400 tracking-[0.1em] uppercase">
+                    Class
+                </div>
+            </a>
+
+            <div class="hidden md:flex space-x-8 font-medium items-center text-slate-300">
+                <a href="ai-tutorial.html#strategy" class="hover:text-teal-400 transition-colors">Strategy</a>
+                <a href="ai-tutorial.html#courses" class="hover:text-teal-400 transition-colors">Courses</a>
+                <a href="ai-tutorial.html#faculty" class="hover:text-teal-400 transition-colors">Faculty</a>
+                <a href="fees.html" class="hover:text-teal-400 transition-colors">Fee</a>
+                <a href="ai-tutorial.html#admission"
+                    class="bg-teal-500 text-[#0B1120] px-6 py-2 rounded-full font-bold hover:bg-white hover:scale-105 transition-all duration-300 shadow-[0_0_15px_rgba(45,212,191,0.3)]">
+                    Enroll Now
+                </a>
+            </div>
+
+            <button id="menu-btn"
+                class="md:hidden text-2xl text-teal-400 focus:outline-none hover:scale-110 transition-transform">
+                <i class="fas fa-bars" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-[#0B1120] absolute top-full left-0 w-full border-t border-slate-800 flex flex-col p-6 space-y-4 shadow-2xl">
+            <a href="ai-tutorial.html#strategy"
+                class="mobile-link text-lg text-slate-300 border-b border-slate-800 pb-2 hover:text-teal-400">Strategy</a>
+            <a href="ai-tutorial.html#courses"
+                class="mobile-link text-lg text-slate-300 border-b border-slate-800 pb-2 hover:text-teal-400">Courses</a>
+            <a href="ai-tutorial.html#faculty"
+                class="mobile-link text-lg text-slate-300 border-b border-slate-800 pb-2 hover:text-teal-400">Faculty</a>
+            <a href="fees.html"
+                class="mobile-link text-lg text-slate-300 border-b border-slate-800 pb-2 hover:text-teal-400">Fee</a>
+            <a href="ai-tutorial.html#admission"
+                class="mobile-link bg-teal-500 text-[#0B1120] text-center py-4 rounded-xl font-bold active:scale-95 transition-transform">Enroll
+                Now</a>
+        </div>
+    </nav>
+
+
+    <section id="pricing" class="py-24 px-6 bg-[#0B1120] relative overflow-hidden">
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-teal-500/5 rounded-full blur-[120px] -z-0">
+        </div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-white mb-4">Simple, <span
+                        class="text-teal-400">Class-Wise</span> Monthly Plans</h2>
+                <p class="text-slate-400">Premium education priced specifically for your academic year.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div
+                    class="bg-slate-900/50 border border-slate-800 rounded-3xl p-8 hover:border-teal-500/30 transition-all group">
+                    <div class="flex justify-between items-start mb-6">
+                        <span
+                            class="bg-slate-800 text-slate-300 text-xs font-bold px-3 py-1 rounded-full uppercase">Level
+                            01</span>
+                        <i class="fas fa-seedling text-teal-500 opacity-50"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-white mb-1">Class IX</h3>
+                    <p class="text-slate-500 text-sm mb-6">Foundation & Logic</p>
+                    <div class="mb-8">
+                        <span class="text-4xl font-black text-white">₹999</span>
+                        <span class="text-slate-500 text-sm">/mo</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 text-sm text-slate-400">
+                        <li class="flex items-center"><i class="fas fa-check text-teal-500 mr-2 text-xs"></i> Python
+                            Fundamentals</li>
+                        <li class="flex items-center"><i class="fas fa-check text-teal-500 mr-2 text-xs"></i> SEBA/CBSE
+                            Curriculum</li>
+                        <li class="flex items-center"><i class="fas fa-check text-teal-500 mr-2 text-xs"></i> Weekly
+                            Practice Sets</li>
+                    </ul>
+                    <a href="ai-tutorial.html#admission"
+                        class="block w-full text-center py-3 rounded-xl border border-slate-700 text-white font-bold group-hover:bg-teal-500 group-hover:text-black group-hover:border-teal-500 transition-all">Select
+                        Plan</a>
+                </div>
+
+                <div
+                    class="bg-slate-900/50 border border-slate-800 rounded-3xl p-8 hover:border-teal-500/30 transition-all group">
+                    <div class="flex justify-between items-start mb-6">
+                        <span
+                            class="bg-slate-800 text-slate-300 text-xs font-bold px-3 py-1 rounded-full uppercase">Level
+                            02</span>
+                        <i class="fas fa-rocket text-teal-500 opacity-50"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-white mb-1">Class X</h3>
+                    <p class="text-slate-500 text-sm mb-6">Board Excellence</p>
+                    <div class="mb-8">
+                        <span class="text-4xl font-black text-white">₹1,299</span>
+                        <span class="text-slate-500 text-sm">/mo</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 text-sm text-slate-400">
+                        <li class="flex items-center"><i class="fas fa-check text-teal-500 mr-2 text-xs"></i> 10-Year
+                            Paper Solving</li>
+                        <li class="flex items-center"><i class="fas fa-check text-teal-500 mr-2 text-xs"></i> Advanced
+                            Logic & Math</li>
+                        <li class="flex items-center"><i class="fas fa-check text-teal-500 mr-2 text-xs"></i> Monthly
+                            Mock Tests</li>
+                    </ul>
+                    <a href="ai-tutorial.html#admission"
+                        class="block w-full text-center py-3 rounded-xl border border-slate-700 text-white font-bold group-hover:bg-teal-500 group-hover:text-black group-hover:border-teal-500 transition-all">Select
+                        Plan</a>
+                </div>
+
+                <div
+                    class="bg-slate-900/50 border border-teal-500/50 rounded-3xl p-8 relative shadow-[0_0_30px_rgba(45,212,191,0.05)] transform lg:-translate-y-2 group">
+                    <div
+                        class="absolute -top-3 left-1/2 -translate-x-1/2 bg-teal-500 text-black text-[10px] font-black px-3 py-1 rounded-full uppercase">
+                        Most Joined</div>
+                    <div class="flex justify-between items-start mb-6">
+                        <span
+                            class="bg-teal-500/20 text-teal-400 text-xs font-bold px-3 py-1 rounded-full uppercase">Level
+                            03</span>
+                        <i class="fas fa-brain text-teal-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-white mb-1">Class XI</h3>
+                    <p class="text-teal-500/70 text-sm mb-6">Professional Track</p>
+                    <div class="mb-8">
+                        <span class="text-4xl font-black text-white">₹1,599</span>
+                        <span class="text-slate-500 text-sm">/mo</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 text-sm text-slate-300">
+                        <li class="flex items-center"><i class="fas fa-check text-teal-400 mr-2 text-xs"></i> Computer
+                            Science / IP</li>
+                        <li class="flex items-center"><i class="fas fa-check text-teal-400 mr-2 text-xs"></i> DSA
+                            Foundations</li>
+                        <li class="flex items-center"><i class="fas fa-check text-teal-400 mr-2 text-xs"></i> 24/7 Doubt
+                            Support</li>
+                    </ul>
+                    <a href="ai-tutorial.html#admission"
+                        class="block w-full text-center py-3 rounded-xl bg-teal-500 text-black font-black hover:bg-white transition-all shadow-lg shadow-teal-500/20">Select
+                        Plan</a>
+                </div>
+
+                <div
+                    class="bg-slate-900/50 border border-slate-800 rounded-3xl p-8 hover:border-teal-500/30 transition-all group">
+                    <div class="flex justify-between items-start mb-6">
+                        <span
+                            class="bg-slate-800 text-slate-300 text-xs font-bold px-3 py-1 rounded-full uppercase">Level
+                            04</span>
+                        <i class="fas fa-trophy text-teal-500 opacity-50"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-white mb-1">Class XII</h3>
+                    <p class="text-slate-500 text-sm mb-6">Career & Boards</p>
+                    <div class="mb-8">
+                        <span class="text-4xl font-black text-white">₹1,999</span>
+                        <span class="text-slate-500 text-sm">/mo</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 text-sm text-slate-400">
+                        <li class="flex items-center"><i class="fas fa-check text-teal-500 mr-2 text-xs"></i> Final
+                            Board Roadmap</li>
+                        <li class="flex items-center"><i class="fas fa-check text-teal-500 mr-2 text-xs"></i> MERN Stack
+                            Intro</li>
+                        <li class="flex items-center"><i class="fas fa-check text-teal-500 mr-2 text-xs"></i> Career
+                            Counseling</li>
+                    </ul>
+                    <a href="ai-tutorial.html#admission"
+                        class="block w-full text-center py-3 rounded-xl border border-slate-700 text-white font-bold group-hover:bg-teal-500 group-hover:text-black group-hover:border-teal-500 transition-all">Select
+                        Plan</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white py-12 px-6 border-t border-slate-200 text-center">
+        <p class="text-slate-400 font-bold uppercase tracking-widest text-xs mb-6">Tools We Master</p>
+        <div class="flex flex-wrap justify-center gap-8 text-3xl text-slate-300">
+            <i class="fab fa-python hover:text-blue-500 transition"></i>
+            <!-- <i class="fab fa-java hover:text-red-500 transition"></i>
+            <i class="fas fa-robot hover:text-teal-500 transition"></i>
+            <i class="fab fa-react hover:text-blue-400 transition"></i>
+            <i class="fab fa-node hover:text-green-500 transition"></i> -->
+        </div>
+        <div class="mt-12 text-slate-500 text-sm">
+            &copy; 2026 8Bit Academy. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Use DOMContentLoaded to ensure the HTML is loaded before the script runs
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // 1. Mobile Menu Logic
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', () => {
+                    const isHidden = mobileMenu.classList.contains('hidden');
+                    if (isHidden) {
+                        mobileMenu.classList.remove('hidden');
+                        menuIcon?.classList.replace('fa-bars', 'fa-times');
+                    } else {
+                        mobileMenu.classList.add('hidden');
+                        menuIcon?.classList.replace('fa-times', 'fa-bars');
+                    }
+                });
+
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        menuIcon?.classList.replace('fa-times', 'fa-bars');
+                    });
+                });
+            }
+
+            // 2. Back to Top Logic
+            const backToTopBtn = document.getElementById('backToTop');
+
+            if (backToTopBtn) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 400) {
+                        backToTopBtn.classList.remove('opacity-0', 'translate-y-10', 'pointer-events-none');
+                        backToTopBtn.classList.add('opacity-100', 'translate-y-0');
+                    } else {
+                        backToTopBtn.classList.add('opacity-0', 'translate-y-10', 'pointer-events-none');
+                        backToTopBtn.classList.remove('opacity-100', 'translate-y-0');
+                    }
+                });
+
+                backToTopBtn.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+        });
+    </script>
+
+    <button id="backToTop"
+        class="fixed bottom-8 right-8 z-50 bg-teal-500 text-white w-12 h-12 rounded-full shadow-2xl flex items-center justify-center opacity-0 translate-y-10 pointer-events-none transition-all duration-500 hover:bg-teal-600 hover:-translate-y-1 focus:outline-none">
+        <i class="fas fa-arrow-up text-lg"></i>
+    </button>
+
+</body>
+
+</html>
